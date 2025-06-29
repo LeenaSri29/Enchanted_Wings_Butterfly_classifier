@@ -77,20 +77,34 @@ Example: Close-up of one butterfly species with description.
 ## 🗂️ Example Project Structure
 
 ```
-enchanted-wings/
+butterfly-classification/backend
 │
-├── images/
-│   ├── gallery.png
-│   ├── species_page.png
-│   └── logo.png
+├── app.py
+├── model.predict.py
+├── butterfly_model.h5
+├── sample_test.jpg
+├── training_set.csv
+├── testing_set.csv
+├── README.md
 │
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── App.js
-│   └── index.js
+├── butterfly_dataset/
+│   ├── Monarch/
+│   │   └── sample.jpg
+│   ├── train/
+│   │   └── [75 butterfly images]
+│   └── test/
+│       └── [75 butterfly images]
 │
-├── public/
+├── scripts/
+│   ├── predict.py
+│   ├── split_dataset.py
+│   ├── train_model.py
+│   ├── style.css
+│   └── butterfly_bg.jpg
+│
+├── templates/
+│   ├── input.html
+│   ├── output.html
 │   └── index.html
 │
 └── README.md
