@@ -48,18 +48,18 @@ This project combines beautiful imagery with useful scientific information to pr
 
 ### 🏞️ Gallery View
 
+![ChatGPT Image Jun 29, 2025, 04_43_23 PM](https://github.com/user-attachments/assets/098f42f0-d41d-462c-af96-3dc799afc308)
 
 
-![gallery view](https://github.com/user-attachments/assets/ca55a75b-87b6-49c3-acd4-b28b463f4eee)
 
 
-Example: A grid view showing multiple butterfly species.
 
 ---
 
 ### 🦋 Species Detail Page
 
-![Species Detail Page](https://upload.wikimedia.org/wikipedia/commons/f/f1/Monarch_Butterfly_Danaus_plexippus.jpg)
+
+![gallery view](https://github.com/user-attachments/assets/1fc05807-ea91-4b20-af44-ea85561f0ab1)
 
 Example: Close-up of one butterfly species with description.
 
