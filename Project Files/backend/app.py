@@ -83,8 +83,8 @@ st.markdown("""
 
 # Streamlit layout
 st.set_page_config(page_title="Enchanted Wings 🦋", layout="centered")
-st.title("🦋 Enchanted Wings: Butterfly Species Identifier")
-st.markdown("Upload a butterfly image to detect its **species** using AI.")
+st.title("🦋Enchanted Wings: Marvels of Butterfly Species")
+st.markdown("Discover the beauty of butterflies. Upload a photo to identify its **species** with AI.")
 
 uploaded_file = st.file_uploader("📤 Upload an image", type=["jpg", "jpeg", "png"])
 
