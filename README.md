@@ -48,7 +48,7 @@ This project combines beautiful imagery with useful scientific information to pr
 
 ### 🏞️ Gallery View
 
-![My Butterfly](images/gallery%20view.jpg)
+![My Butterfly](images/gallery%20view.jpeg)
 
 
 
