@@ -48,7 +48,8 @@ This project combines beautiful imagery with useful scientific information to pr
 
 ### 🏞️ Gallery View
 
-![My Butterfly](images/gallery view.jpg)
+![My Butterfly](images/gallery%20view.jpg)
+
 
 Example: A grid view showing multiple butterfly species.
 
