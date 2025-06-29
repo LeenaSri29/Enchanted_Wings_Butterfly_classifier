@@ -48,7 +48,7 @@ This project combines beautiful imagery with useful scientific information to pr
 
 ### 🏞️ Gallery View
 
-![Gallery View](https://upload.wikimedia.org/wikipedia/commons/f/f7/Butterflies_of_India_collage.jpg)
+![My Butterfly](images/gallery view.jpg)
 
 Example: A grid view showing multiple butterfly species.
 
