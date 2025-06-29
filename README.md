@@ -48,9 +48,17 @@ This project combines beautiful imagery with useful scientific information to pr
 
 ### 🏞️ Gallery View
 
+![Gallery View](https://upload.wikimedia.org/wikipedia/commons/f/f7/Butterflies_of_India_collage.jpg)
 
+Example: A grid view showing multiple butterfly species.
+
+---
 
 ### 🦋 Species Detail Page
+
+![Species Detail Page](https://upload.wikimedia.org/wikipedia/commons/f/f1/Monarch_Butterfly_Danaus_plexippus.jpg)
+
+Example: Close-up of one butterfly species with description.
 
 
 ## 🌱 Key Features
