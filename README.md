@@ -1,207 +1,378 @@
-# Enchanted_Wings_Butterfly_classifier
-
-✅ Project Overview
-✅ Screenshots placeholders
-✅ Detailed Features
-✅ Dataset & Structure
-✅ Tools/Technologies
-✅ How to Use
-✅ Contribution guide
-✅ Acknowledgements & Credits
-
-
----
-
-# 🦋 Enchanted Wings: Marvels of Butterfly Species
-
----
-
-> *Explore. Learn. Conserve.*
-> *A digital showcase of butterfly biodiversity.*
-
----
-
-## 🌟 Introduction
-
-**Enchanted Wings: Marvels of Butterfly Species** is an educational project designed to help people discover, appreciate, and learn about the incredible diversity of butterfly species around the world.
-
-This project combines beautiful imagery with useful scientific information to promote awareness of butterfly biodiversity and conservation.
-
----
-
-## 🔗 Project Repository
-
-👉 **GitHub:** [Enchanted Wings on GitHub](https://github.com/LeenaSri29/Enchanted_Wings_Butterfly_classifier)
-
----
-
-## 🎯 Project Objective
-
-* Build an interactive gallery of butterfly species with images and details.
-* Make learning about butterflies fun, accessible, and engaging.
-* Encourage students, educators, and nature lovers to explore biodiversity.
-* Support conservation education efforts.
-
----
-
-## 📸 Example Screenshots
-
-### 🏞️ Gallery View
-
-![ChatGPT Image Jun 29, 2025, 04_43_23 PM](https://github.com/user-attachments/assets/098f42f0-d41d-462c-af96-3dc799afc308)
-
-
-
-
-
----
-
-### 🦋 Species Detail Page
-
-
-![gallery view](https://github.com/user-attachments/assets/1fc05807-ea91-4b20-af44-ea85561f0ab1)
-
-Example: Close-up of one butterfly species with description.
-
-
-## 🌱 Key Features
-
-✅ Beautiful gallery of butterfly species with images
-✅ Species detail pages with scientific names, habitats, and descriptions
-✅ Easy navigation with search or filter by family, region, or color
-✅ Responsive and user-friendly design for all devices
-✅ Educational content to support conservation learning
-
----
-
-## 🗂️ Example Project Structure
-
-```
-butterfly-classification/backend
-│
-├── app.py
-├── model.predict.py
-├── butterfly_model.h5
-├── sample_test.jpg
-├── training_set.csv
-├── testing_set.csv
-├── README.md
-│
-├── butterfly_dataset/
-│   ├── Monarch/
-│   │   └── sample.jpg
-│   ├── train/
-│   │   └── [75 butterfly images]
-│   └── test/
-│       └── [75 butterfly images]
-│
-├── scripts/
-│   ├── predict.py
-│   ├── split_dataset.py
-│   ├── train_model.py
-│   ├── style.css
-│   └── butterfly_bg.jpg
-│
-├── templates/
-│   ├── input.html
-│   ├── output.html
-│   └── index.html
-│
-└── README.md
-```
-
----
-
-## 📊 Example Dataset Fields
-
-*Optional if you’re storing species info in JSON/DB*
-
-| Field       | Description                  |
-| ----------- | ---------------------------- |
-| ID          | Unique butterfly ID          |
-| Name        | Common name                  |
-| Scientific  | Scientific name              |
-| Family      | Family or classification     |
-| Region      | Geographic distribution      |
-| Description | Short educational text       |
-| Image       | Link/path to butterfly image |
-
----
-
-## ⚙️ Tools & Technologies
-
-* **Frontend:** HTML, CSS, JavaScript, React (optional)
-* **Backend:** Node.js, Express (optional for API)
-* **Database:** MongoDB / JSON file (optional)
-* **Styling:** CSS, Tailwind CSS, Bootstrap
-* **Image Hosting:** Local folder or CDN
-* **IDE:** VS Code, Sublime Text
-* **Version Control:** Git, GitHub
-
----
-
-## 🚀 How to Use
-
-### 1️⃣ Clone the repository
-
-```bash
-git clone https://github.com/LeenaSri29/Enchanted_Wings_Butterfly_classifier
-cd Enchanted_Wings_Butterfly_classifier
-```
-
----
-
-### 2️⃣ Install dependencies *(if using React or Node)*
-
-```bash
-npm install
-```
-
----
-
-### 3️⃣ Run the project locally
-
-```bash
-npm start
-```
-
-Then open your browser at [http://localhost:3000](http://localhost:3000)
-
----
-
-### 4️⃣ Or open static HTML files in browser (simple version)
-
-* Just open `index.html` in your web browser.
-
----
-
-## 👩‍💻 Contribution Guide
-
-We welcome contributions!
-
-✅ Fork the repository
-✅ Create a new feature branch
-✅ Commit your changes
-✅ Push to your fork
-✅ Open a Pull Request
-
----
-
-## 📚 Acknowledgements
-
-* Butterfly conservation organizations
-* Open-source educational image databases
-* Teachers, students, and nature enthusiasts who inspire biodiversity learning
-
----
-
-## 🌎 Credits
-
-* Images: Wikimedia Commons, Unsplash, or your own photographs
-* Design inspiration: Nature apps, field guides
-
----
-
-
-> ✨ *“Marvel at their beauty. Conserve their diversity.”*
+🦋 Butterfly Species Classifier
+An end-to-end machine learning project that predicts butterfly species from images using deep learning. The project includes a complete ML pipeline, Docker containerization, and deployment on Render.
+
+🌟 Features
+Image-based butterfly species
+RESTful API for predictions
+Containerized application using Docker
+Complete ML pipeline from data preprocessing to model deployment
+Deployed and accessible on Render
+Available as a pre-built container on GitHub Container Registry
+📊 Dataset
+This project uses the Butterfly Image Classification Dataset from Kaggle. The dataset contains:
+
+75 different species of butterflies
+High-quality images with various backgrounds and angles
+Properly labeled and categorized data
+To use the dataset:
+
+Download from Kaggle: Download Dataset
+Accept the dataset terms and conditions
+Place the downloaded data in the .\Butterfly_Classification\Butterfly_Dataset directory of the project
+🛠️ Tech Stack
+Machine Learning: TensorFlow
+Web Framework: FastAPI
+Containerization: Docker
+Cloud Platform: Render
+Programming Language: Python 3.8+
+🚀 Quick Start
+Using Pre-built Container
+Pull and run the image directly from GitHub Container Registry:
+
+# Pull the image
+docker pull ghcr.io/thevinaysagar/butterfly_species_classification/my-image-name:latest
+
+# Run the container
+docker run -p 8000:8000 ghcr.io/thevinaysagar/butterfly_species_classification/my-image-name:latest
+Local Development
+Clone the repository:
+git clone https://github.com/TheVinaySagar/Butterfly.git
+cd Butterfly
+Create and activate virtual environment:
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+Install dependencies:
+pip install -r requirements.txt
+Run the application:
+uvicorn app.main:app --reload
+🐳 Building Docker Image Locally
+Build the Docker image:
+docker build -t butterfly-classifier .
+Run the container:
+docker run -p 8000:8000 butterfly-classifier
+📚 API Documentation
+Once the application is running, access the API documentation at:
+
+Swagger UI: http://localhost:8000/scorefile/
+Postman: http://localhost:8000/scorefile/
+ReDoc: http://localhost:8000/scorefile/
+Example API Request
+import requests
+
+url = "https://butterflyworld.onrender.com/"
+files = {"file": open("butterfly_image.jpg", "rb")}
+response = requests.post(url, files=files)
+prediction = response.json()
+🔄 ML Pipeline
+The project implements a comprehensive machine learning pipeline:
+
+Data Collection and Preprocessing
+Model Training and Validation
+Model Optimization
+Inference Pipeline
+API Integration
+Deployment Pipeline
+🧠 Model Architecture
+1. Deep CNN Model Overview
+The model implements a deep Convolutional Neural Network (CNN) architecture specifically designed for butterfly species classification, consisting of four convolutional blocks followed by dense layers for classification.
+
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                Output Shape              Param #   
+=================================================================
+conv2d (Conv2D)             (None, 148, 148, 32)      896       
+batch_normalization         (None, 148, 148, 32)      128       
+max_pooling2d              (None, 74, 74, 32)        0         
+                                                                 
+conv2d_1 (Conv2D)          (None, 72, 72, 64)        18,496     
+batch_normalization_1      (None, 72, 72, 64)        256       
+max_pooling2d_1           (None, 36, 36, 64)        0         
+                                                                 
+conv2d_2 (Conv2D)          (None, 34, 34, 128)       73,856     
+batch_normalization_2      (None, 34, 34, 128)       512       
+max_pooling2d_2           (None, 17, 17, 128)       0         
+                                                                 
+conv2d_3 (Conv2D)          (None, 15, 15, 256)       295,168    
+batch_normalization_3      (None, 15, 15, 256)       1,024      
+max_pooling2d_3           (None, 7, 7, 256)         0         
+                                                                 
+global_average_pooling2d   (None, 256)               0          
+dense                     (None, 512)                131,584    
+dropout                   (None, 512)                0          
+dense_1                   (None, 75)                 38,475     
+=================================================================
+Total params: 560,395
+Trainable params: 559,435
+Non-trainable params: 960
+Architecture Details
+Convolutional Blocks
+First Block
+
+Conv2D: 32 filters, 3×3 kernel
+Batch Normalization
+MaxPooling2D (2×2)
+Output: 74×74×32
+Second Block
+
+Conv2D: 64 filters, 3×3 kernel
+Batch Normalization
+MaxPooling2D (2×2)
+Output: 36×36×64
+Third Block
+
+Conv2D: 128 filters, 3×3 kernel
+Batch Normalization
+MaxPooling2D (2×2)
+Output: 17×17×128
+Fourth Block
+
+Conv2D: 256 filters, 3×3 kernel
+Batch Normalization
+MaxPooling2D (2×2)
+Output: 7×7×256
+Classification Head
+Global Average Pooling 2D
+Dense Layer (512 units)
+Dropout Layer (for regularization)
+Output Layer (75 units for species classification)
+Model Properties
+Total Parameters: 560,395
+Trainable Parameters: 559,435
+Non-trainable Parameters: 960
+Input Shape: (224,224, 3)
+Output Classes: 75 butterfly species
+Key Features
+Progressive Feature Extraction
+
+Channel depth increases gradually: 32 → 64 → 128 → 256
+Spatial dimensions reduce from 148×148 to 7×7
+Regularization Techniques
+
+Batch Normalization after each convolution
+Dropout (before final classification)
+Global Average Pooling for feature aggregation
+Memory Efficiency
+
+Global Average Pooling reduces parameters
+Systematic reduction in spatial dimensions
+Training Configuration
+model.compile(
+    optimizer=tf.keras.optimizers.Adam(learning_rate=0.001),
+    loss='categorical_crossentropy',
+    metrics=['accuracy', tf.keras.metrics.TopKCategoricalAccuracy(k=5)]
+)
+Data Preprocessing
+data_augmentation = Sequential([
+    tf.keras.layers.RandomFlip("horizontal"),
+    tf.keras.layers.RandomRotation(0.2),
+    tf.keras.layers.RandomZoom(0.2),
+    tf.keras.layers.RandomBrightness(0.2),
+    tf.keras.layers.RandomContrast(0.2),
+])
+Model Architecture Diagram
+CNN Architecture
+Loss and Accuracy Curves
+Training and Validation Curves
+Performance Metrics
+Metric	Train	Validation
+Accuracy	89.5%	80%
+Loss	0.530	1.04
+2. Deep Transfer Learning Model Overview
+The model implements a fine-tuned VGG16 architecture with custom classification layers for butterfly species classification. The model leverages pre-trained weights while customizing the later layers for our specific task.
+
+Model: "sequential_6"
+_________________________________________________________________
+Layer (type)                Output Shape              Param #   
+=================================================================
+sequential_5 (Sequential)   (None, 224, 224, 3)       0         
+                                                                 
+vgg16 (Functional)         (None, 7, 7, 512)         14,714,688
+                                                                 
+flatten_3 (Flatten)        (None, 25088)             0         
+                                                                 
+dense_6 (Dense)            (None, 512)               12,845,568
+                                                                 
+dropout_3 (Dropout)        (None, 512)               0         
+                                                                 
+dense_7 (Dense)            (None, 75)                38,475    
+=================================================================
+Total params: 27,598,731
+Trainable params: 19,963,467
+Non-trainable params: 7,635,264
+Architecture Details
+Pre-trained VGG16 Base
+Modified VGG16 architecture with only 5 trainable layers
+First 4 layers frozen to preserve low-level feature extraction
+Output shape: 7×7×512
+Custom Classification Head
+Flatten Layer
+
+Converts 3D feature maps to 1D vector
+Output: 25,088 features
+Dense Layer
+
+512 units with ReLU activation
+Trainable weights: 12.8M parameters
+Dropout Layer
+
+Rate: 0.5
+For regularization and preventing overfitting
+Output Layer
+
+75 units (one per butterfly species)
+Softmax activation
+Model Properties
+Total Parameters: 27.6M
+Trainable Parameters: 20M
+Non-trainable Parameters: 7.6M
+Input Shape: (224, 224, 3)
+Output Classes: 75 butterfly species
+Key Features
+Transfer Learning Strategy
+
+Leverages pre-trained VGG16 weights
+Only 5 layers fine-tuned for butterfly classification
+First 4 VGG16 layers frozen to preserve learned features
+Memory and Computation Optimization
+
+Selective layer training reduces computational overhead
+Maintains robust feature extraction from VGG16
+Efficient parameter utilization with frozen layers
+Regularization Techniques
+
+Dropout layer prevents overfitting
+Transfer learning acts as implicit regularization
+Reduced number of trainable parameters compared to full fine-tuning
+Training Configuration
+model.compile(
+    optimizer=tf.keras.optimizers.Adam(learning_rate=0.001),
+    loss='categorical_crossentropy',
+    metrics=['accuracy', tf.keras.metrics.TopKCategoricalAccuracy(k=5)]
+)
+Data Preprocessing
+data_augmentation = Sequential([
+    tf.keras.layers.RandomFlip("horizontal"),
+    tf.keras.layers.RandomRotation(0.2),
+   #  tf.keras.layers.RandomZoom(0.2),
+   #  tf.keras.layers.RandomBrightness(0.2),
+   #  tf.keras.layers.RandomContrast(0.2),
+])
+VGG16 Layer Configuration
+conv_base = VGG16(
+    weights='imagenet',
+    include_top = False,
+    input_shape=image_shape
+)
+# Freeze first 4 layers
+set_trainable = False
+for layer in conv_base.layers:
+  if layer.name == 'block5_conv1':
+    set_trainable = True
+  if set_trainable:
+    layer.trainable = True
+  else:
+    layer.trainable = False
+
+for layer in conv_base.layers:
+  print(layer.name,layer.trainable)
+# Keep last 5 layers trainable for fine-tuning
+Model Architecture Diagram
+CNN Architecture
+Loss and Accuracy Curves
+Training and Validation Curves
+Performance Metrics
+Metric	Train	Validation
+Accuracy	0.929	0.877
+Loss	0.243	0.472
+🌐 Deployment
+The application is deployed on Render and can be accessed at: Live Link
+
+Deployment Steps
+Create a new Web Service on Render
+Connect your GitHub repository
+Configure build and start commands
+Set environment variables
+Deploy!
+📁 Project Structure
+└── Butterfly_Classification/
+    └── .gitattributes
+    ├── Butterfly_Classification/
+        └── Dataset # Put you data here
+    │   └── Butterfly.ipynb
+    │   └── __init__.py
+    │   └── predictor.py
+    │   └── tempCodeRunnerFile.py
+    ├── Dockerfile
+    ├── Model_pipeline/
+    │   └── __init__.py
+    │   ├── Model.py
+    │   └── predictor.py
+    │   └── preprocessing_utilities.py
+    │   └── tempCodeRunnerFile.py
+    │   └── training.py
+    │   └── training_utilities.py
+    └── README.md
+    ├── app.yaml
+    ├── app/
+    │   └── Custom_CNN_Model.h5
+    │   └── __init__.py
+    │   └── config.yaml
+    │   └── index.html
+    │   └── main.py
+    │   └── tempCodeRunnerFile.py
+    ├── cnn.png
+    ├── example/
+    │   └── data_config.yaml
+    │   └── predictor_config.yaml
+    │   └── training_config.yaml
+    └── requirements.txt
+    └── setup.py
+    └── tempCodeRunnerFile.py
+    └── Custom_CNN_Model_Architecture.png
+🐳 Container Registry
+The project's Docker image is available on GitHub Container Registry. You can find versioned releases and the latest build:
+
+# Pull specific version
+docker pull ghcr.io/thevinaysagar/butterfly_species_classification/my-image-name:latest
+
+# Pull latest
+docker pull ghcr.io/thevinaysagar/butterfly_species_classification/my-image-name:latest
+Available Tags
+latest: Most recent build from the main branch
+v1.0.0: Stable release version
+dev: Development branch build
+🤝 Contributing
+Fork the repository
+Create a new branch
+Make your changes
+Submit a pull request
+📜 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+👥 Authors
+Vinay Sagar - GitHub Profile
+🙏 Acknowledgments
+Inspiration for the Project
+This project was inspired by an engaging seminar on "Butterflies: Nature's Beautiful Indicators" at our college. The seminar covered fascinating aspects of butterflies including:
+
+Different species of butterflies and their unique characteristics
+Butterfly habitats and migration patterns
+Their role in the ecosystem as pollinators
+Natural predators and survival mechanisms
+Geographic distribution of various butterfly species
+The seminar's detailed exploration of butterfly diversity sparked the idea of creating a technological solution to help people identify these beautiful creatures. By combining the biological knowledge gained from the seminar with deep learning, this project aims to make butterfly species identification more accessible to enthusiasts, students, and nature lovers.
+
+Additional Thanks To
+Butterfly Image Classification Dataset on Kaggle
+TensorFlow and FastAPI communities for their excellent documentation
+College faculty for organizing the informative seminar on butterflies
+✍️ Citation
+If you use this project in your research, please cite:
+
+@software{butterfly_classifier,
+  author = {Vinay Sagar},
+  title = {Butterfly Species Classifier},
+  year = {2024},
+  url = {https://github.com/TheVinaySagar/Butterfly.git}
+}
 
